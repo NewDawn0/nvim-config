@@ -16,6 +16,7 @@ in {
     name = "asm-lsp";
     version = "0.7.3";
     PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";
+    nativeBuildInputs = with pkgs; [ openssl pkg-config ];
     buildInputs = with pkgs;
       [ pkg-config openssl ] ++ (if pkgs.stdenv.isDarwin then
         with mac-frameworks; [ SystemConfiguration ]
