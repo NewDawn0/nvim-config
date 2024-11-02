@@ -36,19 +36,19 @@ let
   in substring 1 ((stringLength string) - 2) string;
 in pkgs.neovim.override {
   configure = {
-    packages.all.start = with pkgs.vimPlugins; [
-      cmp-buffer
-      cmp-nvim-lsp
-      cmp-nvim-lua
-      cmp-path
-      cmp_luasnip
-      codeium-nvim
-      lspkind-nvim
-      luasnip
-      nvim-cmp
-      nvim-lspconfig
-    ];
-    packages.all.opt = import ./plugins.nix { inherit pkgs; };
+    packages.all.start = (import ./plugins.nix { inherit pkgs; })
+      ++ (with pkgs.vimPlugins; [
+        cmp-buffer
+        cmp-nvim-lsp
+        cmp-nvim-lua
+        cmp-path
+        cmp_luasnip
+        codeium-nvim
+        lspkind-nvim
+        luasnip
+        nvim-cmp
+        nvim-lspconfig
+      ]);
     customRC = ''
       lua <<EOF
       -- Startup optimisations
