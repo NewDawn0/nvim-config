@@ -205,7 +205,6 @@ else
 
 ++ (if opts.langs.all.enabled || opts.langs.protobuf.enabled then [
   buf
-  buf-language-server
   protolint
   protols
 ] else
