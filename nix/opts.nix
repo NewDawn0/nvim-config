@@ -45,6 +45,6 @@
     toml.enabled = true;
     typescript.enabled = false;
     yaml.enabled = true;
-    zig.enabled = true;
+    zig.enabled = false;
   };
 }

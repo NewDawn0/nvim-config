@@ -258,10 +258,12 @@ else
 ] else
   [ ])
 
-++ (if opts.langs.all.enabled || opts.langs.zig.enabled then [
-  zig
-  zls
-] else
+++ (if opts.langs.all.enabled || opts.langs.zig.enabled then
+  [
+    zig
+    # zls
+  ]
+else
   [ ])
 
 ## FIXME:  TMP ###
