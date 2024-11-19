@@ -105,7 +105,7 @@ else
   [ ])
 
 ++ (if opts.langs.all.enabled || opts.langs.haskell.enabled then [
-  haskell-language-server
+  # haskell-language-server
   hlint
   ormolu
 ] else
