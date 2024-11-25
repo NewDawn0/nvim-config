@@ -15,7 +15,7 @@
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs.url = "github:nixos/nixpkgs";
     treesitter-pinned = {
-      url = "github:NewDawn0/treesitter-pinned-ndnvim";
+      url = "github:NewDawn0/treesitterPinnedNdnvim";
       inputs.nix-systems.follows = "nix-systems";
     };
   };
