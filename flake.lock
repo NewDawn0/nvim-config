@@ -77,16 +77,16 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1731977542,
-        "narHash": "sha256-H6QtCErx8X9lUGScEfQM/f04twfCxN92w9DZHtfMuHQ=",
+        "lastModified": 1732558869,
+        "narHash": "sha256-qFtXhoi9vPIawsQBOg54geSL9d3P/zLziX3kTq4llMs=",
         "owner": "NewDawn0",
-        "repo": "treesitter-pinned-ndnvim",
-        "rev": "8c41a1f2465f453c12cca51c55af9c0b062bf906",
+        "repo": "treesitterPinnedNdnvim",
+        "rev": "180ba9aaccfc494f81a4572fe06fbc3d30bd1993",
         "type": "github"
       },
       "original": {
         "owner": "NewDawn0",
-        "repo": "treesitter-pinned-ndnvim",
+        "repo": "treesitterPinnedNdnvim",
         "type": "github"
       }
     }
